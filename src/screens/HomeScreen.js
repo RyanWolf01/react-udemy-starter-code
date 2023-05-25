@@ -17,6 +17,26 @@ const HomeScreen = (props) => { // can destructure with ({ navigate })
         title='Go to ImageScreens'
       />
 
+      <Button
+        onPress={() => props.navigation.navigate('Counter')}
+        title='Go to Counter Demo'
+      />
+
+      <Button
+        title='Go to Color Demo'
+        onPress={() => props.navigation.navigate('Color')}
+      />
+
+      <Button
+        title='Go to Color Counter'
+        onPress={() => props.navigation.navigate('ColorCounter')}
+      />
+
+      <Button
+        title='Go to Text Screen'
+        onPress={() => props.navigation.navigate('Text')}
+      />
+
       {/* when anything inside TouchableOpacity pressed, it registers */}
       <TouchableOpacity onPress={() => props.navigation.navigate('List')}>
         <Text>Go to List Demo</Text>
